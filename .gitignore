@@ -1,0 +1,18 @@
+node_modules
+dist
+dist-ssr
+*.local
+.DS_Store
+.vite
+coverage
+*.tsbuildinfo
+
+# Financial data must never be committed. Exports and backups sometimes get
+# saved into the project folder by accident; this makes that a non-event even
+# with the repository public.
+*.csv
+*.qfx
+*.ofx
+*.qbo
+*.qif
+budget-backup-*.json
