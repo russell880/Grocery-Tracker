@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!--
+      viewport-fit=cover is what makes env(safe-area-inset-*) return real
+      numbers. Without it those resolve to 0 and the bottom tab bar sits under
+      the home indicator on a notched iPhone.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="What's in the kitchen, what's about to go off, and what you can cook with it. Reads Walmart receipts. Everything stays on your phone." />
+
+    <title>Pantry — groceries &amp; recipes</title>
+
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="theme-color" content="#15181c" />
+
+    <!-- iOS home-screen install. Safari ignores the manifest icons and reads
+         apple-touch-icon instead, so it has to be declared separately. -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Pantry" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32.png" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
